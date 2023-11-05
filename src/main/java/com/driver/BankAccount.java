@@ -3,13 +3,20 @@ package com.driver;
 public class BankAccount {
 
     private String name;
+    private double balance;
+    private double minBalance;
+
+    public String getName() {
+        return name;
+    }
 
     public double getBalance() {
         return balance;
     }
 
-    private double balance;
-    private double minBalance;
+    public double getMinBalance() {
+        return minBalance;
+    }
 
     public BankAccount(String name, double balance, double minBalance) {
         this.name = name;
